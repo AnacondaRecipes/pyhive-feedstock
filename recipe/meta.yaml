@@ -10,8 +10,8 @@ source:
   sha256: a5f2b2f8bcd85a8cd80ab64ff8fbfe1c09515d266650a56f789a8d89ad66d7f4
 
 build:
-  number: 0
-  script: python setup.py install --single-version-externally-managed --record=record.txt
+  number: 1
+  script: pip install . --no-deps --no-build-isolation --ignore-installed --no-cache-dir -vv
 
 requirements:
   host:
